@@ -3,8 +3,10 @@ package com.example.user.myapplication;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
+import com.example.mylibrary.src.MyView;
 import com.thebrownarrow.permissionhelper.ActivityManagePermission;
 import com.thebrownarrow.permissionhelper.PermissionResult;
 import com.thebrownarrow.permissionhelper.PermissionUtils;
@@ -25,8 +27,10 @@ public class MainActivity extends ActivityManagePermission {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        //setContentView(R.layout.activity_main);
 
+        View v = new MyView(this);
+        setContentView(v);
 
         fetch = Fetch.getInstance(this);
 
