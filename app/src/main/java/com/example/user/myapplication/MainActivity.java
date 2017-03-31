@@ -14,6 +14,8 @@ import com.tonyodev.fetch.request.Request;
 
 public class MainActivity extends ActivityManagePermission {
 
+    //This is a branch for module testing
+
     Fetch fetch;
     public static String file_url = "http://vhost2.hansenet.de/10_mb_file.bin.gz";
     public static String file_path = Environment.getExternalStorageDirectory().toString() + "/sdcard/myapp/";
